@@ -20,7 +20,6 @@ export const categoriesReducer = (
     case CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_FAIL:
       return { ...state, error: payload, isLoading: false };
     default:
-      console.log("action is ", type);
       return state;
   }
 };
